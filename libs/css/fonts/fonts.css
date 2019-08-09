@@ -1,0 +1,16 @@
+@font-face {
+    font-family: MedievalSharp;
+    src: url("MedievalSharp.ttf")
+}
+@font-face {
+    font-family: MedievalSharp-Bold;
+    src: url("MedievalSharp-Bold.ttf")
+}
+@font-face {
+    font-family: MedievalSharp-BoldOblique;
+    src: url("MedievalSharp-BoldOblique.ttf")
+}
+@font-face {
+    font-family: MedievalSharp-Oblique;
+    src: url("MedievalSharp-Oblique.ttf")
+}

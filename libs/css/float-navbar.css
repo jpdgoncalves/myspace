@@ -1,0 +1,30 @@
+@keyframes float{
+    0% {
+        margin-top: 0%;
+    }
+
+    100% {
+        margin-top: 1%;
+    }
+}
+
+nav {
+    padding-top : 2% ;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display : flex ;
+    justify-content : space-between ;
+}
+nav a {
+    color: #222222;
+    text-decoration: none;
+}
+
+nav a.float {
+    animation-name: float;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
