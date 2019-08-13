@@ -4,6 +4,7 @@ if (!isset($routes)) {
     $routes = array();
 
     $default_handler = function () {
+        echo "this method is invalid for this route";
         http_response_code(405);
         die();
     };
@@ -83,6 +84,7 @@ if (!isset($routes)) {
         if(array_key_exists($uri, $routes)) {
             $routes[$uri]->call_handler($method);
         } else {
+            echo "this route could not be found";
             http_response_code(404);
             die();
         }
