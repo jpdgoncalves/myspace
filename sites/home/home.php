@@ -4,8 +4,8 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo $base_path?>/css/index.css?<?php echo $css_version?>">
-    <script type="module" src="<?php echo $base_path?>/js/index.js?<?php echo $js_version?>"></script>
+    <link rel="stylesheet" href="<?php echo $base_path?>/css/index.css?v=<?php echo $css_version?>">
+    <script type="module" src="<?php echo $base_path?>/js/index.js?v=<?php echo $js_version?>"></script>
 </head>
 
 <body>
