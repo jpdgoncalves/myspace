@@ -1,10 +1,11 @@
+<?php require "globals.php";?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <script type="module" src="./js/index.js"></script>
+    <link rel="stylesheet" href="<?php echo $base_path?>/css/index.css?<?php echo $css_version?>">
+    <script type="module" src="<?php echo $base_path?>/js/index.js?<?php echo $js_version?>"></script>
 </head>
 
 <body>

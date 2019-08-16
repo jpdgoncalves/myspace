@@ -1,6 +1,6 @@
-import {Emitter,EmitterBuilder} from '../libs/js/graphics/emitter.js';
-import * as Canvas from '../libs/js/graphics/canvas.js'
-import * as Geometry from '../libs/js/graphics/geometry.js';
+import {Emitter,EmitterBuilder} from '../../../libs/js/graphics/emitter.js';
+import * as Canvas from '../../../libs/js/graphics/canvas.js'
+import * as Geometry from '../../../libs/js/graphics/geometry.js';
 
 window.onload = function() {
     let body = document.querySelector("body");

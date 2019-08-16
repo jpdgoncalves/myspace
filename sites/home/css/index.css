@@ -1,5 +1,5 @@
-@import '../libs/css/fonts/fonts.css';
-@import '../libs/css/float-navbar.css';
+@import '../../../libs/css/fonts/fonts.css';
+@import '../../../libs/css/float-navbar.css';
 
 html, body {
     border: 0;
