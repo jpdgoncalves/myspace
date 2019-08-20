@@ -1,0 +1,28 @@
+@import '../../libs/css/fonts/fonts.css';
+@import '../../libs/css/float-navbar.css';
+
+html, body {
+    border: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #eeeeee;
+}
+
+canvas.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+nav {
+    background-color: transparent;
+}
+
+nav a {
+    font-family: MedievalSharp;
+    color: #222222;
+}

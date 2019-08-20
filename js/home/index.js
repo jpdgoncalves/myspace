@@ -1,23 +1,29 @@
-import {Emitter,EmitterBuilder} from '../../libs/js/graphics/emitter.js';
-import * as Canvas from '../../libs/js/graphics/canvas.js'
-import * as Geometry from '../../libs/js/graphics/geometry.js';
+let tick = true;
 
 window.onload = function() {
-    let body = document.querySelector("body");
-    Canvas.initCanvas("background",body);
+    let header = document.querySelector("header");
+    let nav = document.querySelector("header nav");
 
-    let emitterBuilder = new EmitterBuilder();
-    let corner1 = new Geometry.Point(0, Canvas.CANVAS.height+600);
-    let corner2 = new Geometry.Point(Canvas.CANVAS.width, Canvas.CANVAS.height);
-    let spawningBox = new Geometry.BoundingBox([corner1,corner2]);
+    let moveHeader = function(pos) {
+        header.style.top = pos;
+        if(pos == 0 && nav.classList.contains("scrolled")) {
+            nav.classList.remove("scrolled");
+            nav.classList.add("unscrolled");
+        } else if(!nav.classList.contains("scrolled")) {
+            nav.classList.add("scrolled");
+            nav.classList.remove("unscrolled");
+        }
+    }
 
-    emitterBuilder.spawningBox = spawningBox;
+    window.addEventListener("scroll", function() {
+        let yPos = window.scrollY;
+        if(tick) {
+            window.requestAnimationFrame(function() {
+                moveHeader(yPos);
+                tick = true;
+            });
+        }
 
-    let emitter = emitterBuilder.build();
-
-    Canvas.startAnimation(function() {
-        emitter.update();
-    }, function() {
-        emitter.draw(Canvas);
+        tick = false;
     });
 }
