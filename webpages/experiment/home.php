@@ -3,8 +3,8 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/css/experiment/home.css"/>
-    <script src="/js/experiment/home.js"></script>
+    <link rel="stylesheet" href="/css/experiment/home.css?v=<?php echo $css_version?>"/>
+    <script src="/js/experiment/home.js?v=<?php echo $js_version?>"></script>
 </head>
 
 <body>
