@@ -43,6 +43,11 @@ address {
     color: #eeeeee;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /*header*/
 header {
     position: fixed;
@@ -228,22 +233,14 @@ main section ul.cardlist li.card {
     text-align: left;
     display: inline-block;
     margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 main section ul.cardlist li.card * {
-    padding-left: 5px;
-    padding-right: 5px;
     color: #222222;
-}
-
-@media only screen and (min-width: 770px) {
-    main section ul.cardlist li.card * {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 15px;
-        padding-right: 15px;
-        color: #222222;
-    }
 }
 
 /**footer**/
