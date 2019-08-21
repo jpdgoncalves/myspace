@@ -243,6 +243,11 @@ main section ul.cardlist li.card * {
     color: #222222;
 }
 
+main section ul.cardlist img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 /**footer**/
 
 footer {

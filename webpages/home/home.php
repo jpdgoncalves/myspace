@@ -36,11 +36,12 @@
             <h2>Python</h2>
             <ul class="cardlist">
                 <?php
-                $projects = getNRandomProjects(3,"python");
+                $projects = getNRandomProjects(3, "python");
                 foreach ($projects as $project) {
                     ?>
 
                 <li class="card">
+                    <img src="<?php echo $project["icon"]; ?>" />
                     <a href="<?php echo $project["href"]; ?>">
                         <h3><?php echo $project["name"]; ?></h3>
                         <p><?php echo $project["description"]; ?></p>
@@ -54,11 +55,12 @@
             <h2>Javascript</h2>
             <ul class="cardlist">
                 <?php
-                $projects = getNRandomProjects(3,"javascript");
+                $projects = getNRandomProjects(3, "javascript");
                 foreach ($projects as $project) {
                     ?>
 
                 <li class="card">
+                    <img src="<?php echo $project["icon"]; ?>" />
                     <a href="<?php echo $project["href"]; ?>">
                         <h3><?php echo $project["name"]; ?></h3>
                         <p><?php echo $project["description"]; ?></p>
@@ -72,11 +74,12 @@
             <h2>Java</h2>
             <ul class="cardlist">
                 <?php
-                $projects = getNRandomProjects(3,"java");
+                $projects = getNRandomProjects(3, "java");
                 foreach ($projects as $project) {
                     ?>
 
                 <li class="card">
+                    <img src="<?php echo $project["icon"]; ?>" />
                     <a href="<?php echo $project["href"]; ?>">
                         <h3><?php echo $project["name"]; ?></h3>
                         <p><?php echo $project["description"]; ?></p>

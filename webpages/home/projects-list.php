@@ -3,6 +3,7 @@
  $projects_list = array(
     "python" => array(
         array(
+            "icon" => "/img/home/python-icon.svg",
             "name" => "Security",
             "description" => "A small group of scripts for the security course",
             "href" => "#"
@@ -10,6 +11,7 @@
     ),
     "javascript" => array(
         array(
+            "icon" => "/img/home/javascript-icon.svg",
             "name" => "Web Development",
             "description" => "A small group of scripts for the web development course",
             "href" => "#"
@@ -17,6 +19,7 @@
     ),
     "java" => array(
         array(
+            "icon" => "/img/home/java-icon.svg",
             "name" => "Java Development",
             "description" => "A small group of scripts for the java development course",
             "href" => "#"

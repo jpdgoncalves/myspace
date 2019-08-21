@@ -35,6 +35,7 @@
                 ?>
 
                 <li class="card">
+                    <img src="<?php echo $project["icon"];?>"/>
                     <a href="<?php echo $project["href"];?>">
                         <h3><?php echo $project["name"];?></h3>
                         <p><?php echo $project["description"];?></p>
