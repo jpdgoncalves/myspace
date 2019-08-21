@@ -45,6 +45,9 @@ address {
 
 /*header*/
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,10 +58,41 @@ header {
 
 @media only screen and (min-width: 770px) {
     header {
-        background-color: rgba(34, 34, 34, 0.5);;
-        width: 100%;
-        height: 50px;
+        background-color: rgba(34, 34, 34, 0.5);
     }
+
+    header.scrolled {
+        animation-name: opaque-background;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    header.unscrolled {
+        animation-name: transparent-background;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes opaque-background {
+        from {
+            background-color: rgba(34, 34, 34, 0.5);
+        }
+
+        to {
+            background-color: #222222;
+        }
+    }
+
+    @keyframes transparent-background {
+        from {
+            background-color: #222222;
+        }
+
+        to {
+            background-color: rgba(34, 34, 34, 0.5);
+        }
+    }
+
 }
 
 header h1.logo {
@@ -144,12 +178,12 @@ body div.background img{
 /**main**/
 
 main {
-    margin-top: 20px;
+    margin-top: 70px;
 }
 
 @media only screen and (min-width: 770px) {
     main {
-        margin-top: 50px;
+        margin-top: 80px;
         margin-left: auto;
         margin-right: auto;
         width: 60%;

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/libs/css/reset.css?v=<?php echo $css_version?>" />
     <link rel="stylesheet" href="/css/home/home.css?v=<?php echo $css_version?>" />
-    <script src="/js/home/home.js?v=<?php echo $js_version?>"></script>
+    <script type="module" src="/js/home/home.js?v=<?php echo $js_version?>"></script>
 </head>
 
 <body>
