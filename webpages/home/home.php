@@ -1,4 +1,4 @@
-<?php require "projects-list.php";?>
+<?php require "projects-list.php"; ?>
 <!DOCTYPE html>
 <html>
 
@@ -35,50 +35,57 @@
             <h1>Random projects</h1>
             <h2>Python</h2>
             <ul class="cardlist">
+                <?php
+                $projects = getNRandomProjects(3,"python");
+                foreach ($projects as $project) {
+                    ?>
+
                 <li class="card">
-                    <a>
-                        <h3>Security</h3>
-                        <p>A small script for security course</p>
+                    <a href="<?php echo $project["href"]; ?>">
+                        <h3><?php echo $project["name"]; ?></h3>
+                        <p><?php echo $project["description"]; ?></p>
                     </a>
                 </li>
-                <li class="card">
-                    <h3>Security</h3>
-                    <p>A small script for security course</p>
-                </li>
-                <li class="card">
-                    <h3>Security</h3>
-                    <p>A small script for security course</p>
-                </li>
+
+                <?php
+                }
+                ?>
             </ul>
             <h2>Javascript</h2>
             <ul class="cardlist">
+                <?php
+                $projects = getNRandomProjects(3,"javascript");
+                foreach ($projects as $project) {
+                    ?>
+
                 <li class="card">
-                    <h3>Security</h3>
-                    <p>A small script for security course</p>
+                    <a href="<?php echo $project["href"]; ?>">
+                        <h3><?php echo $project["name"]; ?></h3>
+                        <p><?php echo $project["description"]; ?></p>
+                    </a>
                 </li>
-                <li class="card">
-                    <h3>Security</h3>
-                    <p>A small script for security course</p>
-                </li>
-                <li class="card">
-                    <h3>Security</h3>
-                    <p>A small script for security course</p>
-                </li>
+
+                <?php
+                }
+                ?>
             </ul>
             <h2>Java</h2>
             <ul class="cardlist">
+                <?php
+                $projects = getNRandomProjects(3,"java");
+                foreach ($projects as $project) {
+                    ?>
+
                 <li class="card">
-                    <h3>Security</h3>
-                    <p>A small script for security course</p>
+                    <a href="<?php echo $project["href"]; ?>">
+                        <h3><?php echo $project["name"]; ?></h3>
+                        <p><?php echo $project["description"]; ?></p>
+                    </a>
                 </li>
-                <li class="card">
-                    <h3>Security</h3>
-                    <p>A small script for security course</p>
-                </li>
-                <li class="card">
-                    <h3>Security</h3>
-                    <p>A small script for security course</p>
-                </li>
+
+                <?php
+                }
+                ?>
             </ul>
         </section>
     </main>
