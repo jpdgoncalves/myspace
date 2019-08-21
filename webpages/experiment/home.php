@@ -2,34 +2,29 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/libs/css/reset.css" />
-    <link rel="stylesheet" href="/css/home/home.css" />
-    <script src="/js/home/home.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/css/experiment/home.css"/>
+    <script src="/js/experiment/home.js"></script>
 </head>
 
 <body>
-    <div class="background">
-        <img src="/img/home/blur-breathtaking-clouds-1903702.jpg" />
-    </div>
+    <img class="background" src="/img/home/blur-breathtaking-clouds-1903702.jpg"/>
     <header>
-        <h1 class="logo">Luis Shanigans</h1>
         <nav>
-            <ul>
-                <li><a href="#">Python</a></li>
-                <li><a href="#">Javascript</a></li>
-                <li><a href="#">Java</a></li>
-            </ul>
+            <a href="#">Home</a>
+            <a href="#">Python</a>
+            <a href="#">Javascript</a>
+            <a href="#">Java</a>
         </nav>
     </header>
     <main>
-        <!--GRETTINGS BANNER-->
+        <!--Greetings-->
         <section>
             <h1>Hi there!</h1>
             <p>Welcome to my portfolio! In here i will post all my projects mainly small snipets and fun things i decided to do but also actually useful projects.</p>
             <p>For the time being the projects will consist solely on coding projects separate by programming language</p>
         </section>
-        <!--RANDOM CODE SNIPETS AND PROJECTS-->
+        <!--Sample Projects-->
         <section>
             <h1>Random projects</h1>
             <h2>Python</h2>
@@ -80,12 +75,10 @@
         </section>
     </main>
     <footer>
-        <section>
-            <address>
-                <p>Made by: <span>Luis Ferreira</span></p>
-                <p>Email: <span>apenaspara1998@gmail.com</span></p>
-            </address>
-        </section>
+        <address>
+            <p>Made by: <span>Luis Ferreira</span></p>
+            <p>Email: <span>apenaspara1998@gmail.com</span></p>
+        </address>
     </footer>
 </body>
 

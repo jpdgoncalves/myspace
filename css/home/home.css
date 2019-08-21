@@ -1,0 +1,241 @@
+/*globals*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eeeeee;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    color: #eeeeee;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    color: #eeeeee; 
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 125%;
+    color: #eeeeee;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eeeeee;
+}
+
+address {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eeeeee;
+}
+
+/*header*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222222;
+    width: 100%;
+    height: 50px;
+}
+
+@media only screen and (min-width: 770px) {
+    header {
+        background-color: rgba(34, 34, 34, 0.5);;
+        width: 100%;
+        height: 50px;
+    }
+}
+
+header h1.logo {
+    float: left;
+    font-size: 100%;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 770px) {
+    header h1.logo {
+        font-size: 100%;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+}
+
+header nav {
+    background-image: url(../../img/home/nav-icon.svg);
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 40px;
+    float: right;
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 770px) {
+    header nav {
+        background-image: none;
+        height: fit-content;
+        width: fit-content;
+        float: right;
+        margin-right: 20px;
+    }
+}
+
+header nav ul {
+    display: none;
+}
+
+@media only screen and (min-width: 770px) {
+    header nav ul {
+        display: inline;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+    }
+
+    header nav ul li a:hover{
+        text-shadow: 0 0 1px #eeeeee, 0 0 1px #eeeeee;
+    }
+}
+
+/*background image*/
+body div.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+body div.background img{
+    width: auto;
+    height: 100%;
+}
+
+@media only screen and (min-width: 770px) {
+    body div.background img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/**main**/
+
+main {
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 770px) {
+    main {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+}
+
+main section {
+    background-color: rgba(34, 34, 34, 0.5);
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 770px) {
+    main section {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+}
+
+main section ul.cardlist {
+    text-align: center;
+    background-color: #dddddd;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+@media only screen and (min-width: 770px) {
+    main section ul.cardlist {
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+
+main section ul.cardlist li.card {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: 0 0 1px #cccccc;
+    width: fit-content;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+main section ul.cardlist li.card * {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #222222;
+}
+
+@media only screen and (min-width: 770px) {
+    main section ul.cardlist li.card * {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: #222222;
+    }
+}
+
+/**footer**/
+
+footer {
+    margin-bottom: 20px;
+}
+
+footer section {
+    background-color: rgba(34, 34, 34, 0.5);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 770px) {
+    footer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+
+    footer section {
+        padding: 20px;
+    }
+}

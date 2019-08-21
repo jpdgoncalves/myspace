@@ -1,0 +1,12 @@
+<svg viewBox="0 0 8 6" xmlns="http://www.w3.org/2000/svg">
+
+  <line x1="1" y1="1" x2="7" y2="1" stroke="#eeeeee"
+        stroke-linecap="round" />
+
+  <line x1="1" y1="3" x2="7" y2="3" stroke="#eeeeee"
+        stroke-linecap="round" />
+
+  <line x1="1" y1="5" x2="7" y2="5" stroke="#eeeeee"
+        stroke-linecap="round" />
+ 
+</svg>
