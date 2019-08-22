@@ -233,18 +233,8 @@ body div.background {
     height: 100%;
     width: 100%;
     z-index: -1;
-}
-
-body div.background img{
-    width: auto;
-    height: 100%;
-}
-
-@media only screen and (min-width: 770px) {
-    body div.background img{
-        width: 100%;
-        height: auto;
-    }
+    background-image: url("/img/home/blur-breathtaking-clouds-1903702.jpg");
+    background-size: cover;
 }
 
 /**main**/

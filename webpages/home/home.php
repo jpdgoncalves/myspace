@@ -11,7 +11,6 @@
 
 <body>
     <div class="background">
-        <img src="/img/home/blur-breathtaking-clouds-1903702.jpg" />
     </div>
     <header>
         <h1 class="logo"><a href="/">Luis Shanigans</a></h1>

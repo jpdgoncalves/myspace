@@ -13,12 +13,11 @@
 
 <body>
     <div class="background">
-        <img src="/img/home/blur-breathtaking-clouds-1903702.jpg" />
     </div>
     <header>
         <h1 class="logo"><a href="/">Luis Shanigans</a></h1>
         <nav>
-            <ul>
+            <ul id="navigation">
                 <li><a href="/projects/python">Python</a></li>
                 <li><a href="/projects/javascript">Javascript</a></li>
                 <li><a href="/projects/java">Java</a></li>
