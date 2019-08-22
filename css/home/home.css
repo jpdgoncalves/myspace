@@ -159,7 +159,7 @@ header nav ul.show {
 }
 
 header nav ul.hide {
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-name: hideNav;
 }
@@ -169,13 +169,13 @@ header nav ul.hide {
         max-height: 0;
     }
     to {
-        max-height: 50%;
+        max-height: 100%;
     }
 }
 
 @keyframes hideNav {
     from {
-        max-height: 50%;
+        max-height: 100%;
     }
     to {
         max-height: 0;
