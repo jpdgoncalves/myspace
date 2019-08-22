@@ -1,10 +1,15 @@
-let tick = true;
 const controlYPos = 10;
+const liHeight = 50;
 
-window.onload = windowOnLoad;
+let tick = true;
+
+window.onload = function() {
+    console.log("window loaded");
+    windowOnLoad();
+    setNavTap();
+};
 
 function windowOnLoad() {
-    console.log("window loaded");
     let header = document.querySelector("header");
 
     let changeBackground = function(posY) {
@@ -30,4 +35,25 @@ function windowOnLoad() {
 
         tick = false;
     });
+}
+
+function setNavTap() {
+
+    let nav = document.querySelector("nav");
+    let ul = document.getElementById("navigation");
+    
+    let onTap = function() {
+        console.log("got a tap!");
+        if(!ul.classList.contains("show")) {
+            ul.classList.add("show");
+            ul.classList.remove("hide");
+            nav.classList.add("tapped");
+        } else {
+            ul.classList.add("hide");
+            ul.classList.remove("show");
+            nav.classList.remove("tapped");
+        }
+    }
+
+    nav.addEventListener("touchstart", onTap);
 }

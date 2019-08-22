@@ -122,6 +122,12 @@ header nav {
     width: 40px;
     float: right;
     margin-right: 10px;
+    border: 5px solid transparent;
+}
+
+header nav.tapped {
+    border-radius: 5px;
+    background-color: #444444;
 }
 
 @media only screen and (min-width: 770px) {
@@ -131,22 +137,83 @@ header nav {
         width: fit-content;
         float: right;
         margin-right: 20px;
+        border: 0;
     }
 }
 
 header nav ul {
-    display: none;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    max-height: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul.show {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: showNav;
+}
+
+header nav ul.hide {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: hideNav;
+}
+
+@keyframes showNav {
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 50%;
+    }
+}
+
+@keyframes hideNav {
+    from {
+        max-height: 50%;
+    }
+    to {
+        max-height: 0;
+    }
 }
 
 @media only screen and (min-width: 770px) {
     header nav ul {
+        position: static;
+        max-height: none;
         display: inline;
     }
+}
+
+header nav ul li {
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #444444;
+    background-color: #333333;
+    padding-left: 10px;
+    display: table;
+}
+
+header nav ul li a {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+@media only screen and (min-width: 770px) {
 
     header nav ul li {
+        height: auto;
+        border-bottom: 0;
+        background-color: transparent;
         display: inline-block;
         margin-left: 20px;
         margin-right: 20px;
+        width: auto;
     }
 
     header nav ul li a {
