@@ -26,18 +26,18 @@
     </header>
     <main>
         <section>
-            <h1><?php echo ucwords($project_subject." projects");?></h1>
+            <h1><?php echo ucwords($project_subject . " projects"); ?></h1>
             <ul class="cardlist">
                 <?php
                 $projects = getProjects($project_subject);
                 foreach ($projects as $project) {
-                ?>
+                    ?>
 
                 <li class="card">
-                    <img src="<?php echo $project["icon"];?>"/>
-                    <a href="<?php echo $project["href"];?>">
-                        <h3><?php echo $project["name"];?></h3>
-                        <p><?php echo $project["description"];?></p>
+                    <a href="<?php echo $project["href"]; ?>">
+                        <img src="<?php echo $project["icon"]; ?>" />
+                        <h3><?php echo $project["name"]; ?></h3>
+                        <p><?php echo $project["description"]; ?></p>
                     </a>
                 </li>
 

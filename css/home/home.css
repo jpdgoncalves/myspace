@@ -303,6 +303,10 @@ main section ul.cardlist li.card * {
 main section ul.cardlist img {
     margin-top: 5px;
     margin-bottom: 5px;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    box-shadow: 0 0 2px #aaaaaa;
 }
 
 /**footer**/
