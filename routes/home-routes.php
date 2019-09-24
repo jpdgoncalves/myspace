@@ -48,3 +48,17 @@ add_route("/projects/java/", HttpMethods::GET, function() {
     $project_subject = "java";
     include "webpages/home/projects.php";
 });
+
+add_route("/projects/cpp", HttpMethods::GET, function() {
+    $css_version = "1.0.7";
+    $js_version = "1.0.3";
+    $project_subject = "cpp";
+    include "webpages/home/projects.php";
+});
+
+add_route("/projects/cpp/", HttpMethods::GET, function() {
+    $css_version = "1.0.7";
+    $js_version = "1.0.3";
+    $project_subject = "cpp";
+    include "webpages/home/projects.php";
+});

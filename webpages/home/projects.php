@@ -21,6 +21,7 @@
                 <li><a href="/projects/python">Python</a></li>
                 <li><a href="/projects/javascript">Javascript</a></li>
                 <li><a href="/projects/java">Java</a></li>
+                <li><a href="/projects/cpp">C++</a></li>
             </ul>
         </nav>
     </header>

@@ -25,6 +25,15 @@
             "href" => "#"
         )
     )
+    ,
+    "cpp" => array(
+        array(
+            "icon" => "/img/home/java-icon.svg",
+            "name" => "C++ Development",
+            "description" => "A small group of scripts for the c++ development course",
+            "href" => "#"
+        )
+    )
 );
 
 function getNRandomProjects(int $number, string $subject) {
